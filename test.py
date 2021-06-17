@@ -1,5 +1,17 @@
-import os
+test_dict = [{
+    'name': 'John',
+    'age': 16
+},
+    {
+        'name': 'Amy',
+        'age': 20
+    }
+]
 
+print(test_dict)
 
-yes = os.path.isfile("./images/card_back.png")
-print(yes)
+test_dict.remove({
+    'name': 'John'
+})
+
+print(test_dict)
